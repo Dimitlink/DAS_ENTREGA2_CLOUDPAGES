@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/b_escrbir"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:onClick="onClickEscribir"
+        android:scaleType="centerCrop"
+        android:text="Escribir diario" />
+
+    <Button
+        android:id="@+id/b_lista"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:onClick="onClickListar"
+        android:scaleType="centerCrop"
+        android:text="VER DIARIOS" />
+
+
+</LinearLayout>

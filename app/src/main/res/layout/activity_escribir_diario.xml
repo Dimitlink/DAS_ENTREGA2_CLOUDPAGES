@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/i_diario"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:background="#e4e9eb"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        />
+
+    <Button
+        android:id="@+id/b_galeria"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:onClick="onClickFoto"
+        android:text="sacar foto" />
+
+    <EditText
+        android:id="@+id/t_titulo"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:inputType="textShortMessage|textMultiLine"
+        android:hint="Introduce un título..." />
+
+    <EditText
+        android:id="@+id/t_cuerpoDiario"
+        android:layout_width="320dp"
+        android:layout_height="219dp"
+        android:ems="10"
+        android:inputType="textLongMessage|textMultiLine"
+        android:hint="Introduce aquí tu diario..." />
+
+    <Button
+        android:id="@+id/b_guardar"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:onClick="onClickGuardar"
+        android:text="guardar" />
+
+</LinearLayout>

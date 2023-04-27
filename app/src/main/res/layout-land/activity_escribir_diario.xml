@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/i_diario"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:adjustViewBounds="true"
+            android:background="#e4e9eb"
+            android:layout_gravity="center_horizontal"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            />
+
+        <Button
+            android:id="@+id/b_galeria"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:onClick="onClickFoto"
+            android:text="Sacar foto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="424dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/t_titulo"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Introduce un título..."
+            android:inputType="textShortMessage|textMultiLine" />
+
+        <EditText
+            android:id="@+id/t_cuerpoDiario"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:hint="Introduce aquí tu diario..."
+            android:inputType="textLongMessage|textMultiLine" />
+
+        <Button
+            android:id="@+id/b_guardar"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:onClick="onClickGuardar"
+            android:text="guardar" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

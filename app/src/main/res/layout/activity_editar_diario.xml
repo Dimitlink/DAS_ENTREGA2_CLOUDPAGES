@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/i_ediario"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/t_etitulo"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Introduce un título..."
+        />
+
+    <EditText
+        android:id="@+id/t_ecuerpo"
+        android:layout_width="320dp"
+        android:layout_height="219dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Introduce aquí tu diario..."
+        />
+
+    <Button
+        android:id="@+id/b_eguardar"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:onClick="onClickEditar"
+        android:text="guardar" />
+
+    <Button
+        android:id="@+id/b_eborrar"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:onClick="onClickBorrar"
+        android:text="borrar" />
+
+</LinearLayout>

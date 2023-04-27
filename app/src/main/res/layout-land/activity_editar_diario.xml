@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/i_ediario"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/t_etitulo"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:hint="Título"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/t_ecuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diario"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/b_eguardar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onClickEditar"
+            android:text="Guardar"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_eborrar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onClickBorrar"
+            android:text="Borrar"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
